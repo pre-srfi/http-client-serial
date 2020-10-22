@@ -1,4 +1,4 @@
-# SRFI nnn: Title
+# SRFI nnn: HTTP client (serial)
 
 by Firstname Lastname, Another Person, Third Person
 
@@ -8,23 +8,15 @@ Early Draft
 
 # Abstract
 
-??? abstract, preferably shorter than 200 words. Please outline the
-need for, and design of, the proposal.
+This SRFI provides a Hypertext Transfer Protocol client. It supports
+HTTP/1.1, HTTPS, cookies, query strings, cookies, forms, etc.
+Cutting-edge versions of HTTP support downloading multiple data
+streams in parallel. This SRFI does not; it is limited to classic
+serial downloads only, which enables a much simpler programming model.
 
 # Issues
 
-??? Optional section that may point out things to be resolved. This
-will not appear in the final SRFI.
-
 # Rationale
-
-??? detailed rationale. This should be 200-500 words long. Please
-explain why the proposal should be incorporated as a standard feature
-in Scheme implementations. List related standards and SRFIs, including
-dependencies, conflicts, and replacements. If there are other
-standards which this proposal will replace or with which it will
-compete, please explain why the present proposal is a substantial
-improvement.
 
 ## Survey of prior art
 
@@ -50,12 +42,7 @@ the sample implementation.
 
 # Acknowledgements
 
-??? Give credits where credits is due.
-
 # References
-
-??? Optional section with links to web pages, books and papers that
-helped design the SRFI.
 
 # Copyright
 
